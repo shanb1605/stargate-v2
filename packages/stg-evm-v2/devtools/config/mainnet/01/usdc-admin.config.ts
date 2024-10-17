@@ -5,7 +5,7 @@ import { EndpointId } from '@layerzerolabs/lz-definitions'
 
 import { getUSDCProxyDeployName } from '../../../../ops/util'
 import { getSafeAddress } from '../../utils'
-import { onFlare, onGravity, onIota, onKlaytn, onRarible, onTaiko, onXchain } from '../utils'
+import { onDegen, onFlare, onGravity, onIota, onKlaytn, onRarible, onTaiko, onXchain } from '../utils'
 
 const proxyContract = { contractName: getUSDCProxyDeployName() }
 
