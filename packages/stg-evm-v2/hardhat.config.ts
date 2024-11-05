@@ -336,6 +336,13 @@ const networks: NetworksUserConfig = {
         safeConfig: getSafeConfig(EndpointId.OPTIMISM_V2_MAINNET),
         timeout: DEFAULT_NETWORK_TIMEOUT,
     },
+    'orderly-mainnet': {
+        eid: EndpointId.ORDERLY_V2_MAINNET,
+        url: process.env.RPC_URL_ORDERLY_MAINNET || 'https://rpc.orderly.network',
+        accounts: mainnetAccounts,
+        safeConfig: getSafeConfig(EndpointId.ORDERLY_V2_MAINNET),
+        timeout: DEFAULT_NETWORK_TIMEOUT,
+    },
     'polygon-mainnet': {
         eid: EndpointId.POLYGON_V2_MAINNET,
         url: process.env.RPC_URL_POLYGON_MAINNET || 'https://polygon.meowrpc.com',

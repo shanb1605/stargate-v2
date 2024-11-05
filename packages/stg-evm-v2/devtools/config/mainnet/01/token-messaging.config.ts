@@ -22,6 +22,7 @@ import {
     onMantle,
     onMetis,
     onOpt,
+    onOrderly,
     onPolygon,
     onRarible,
     onScroll,
@@ -57,6 +58,7 @@ export default async (): Promise<OmniGraphHardhat<TokenMessagingNodeConfig, Toke
     const mantleTokenMsging = onMantle(contract)
     const metisTokenMsging = onMetis(contract)
     const optTokenMsging = onOpt(contract)
+    const orderlyTokenMsging = onOrderly(contract)
     const polygonTokenMsging = onPolygon(contract)
     const raribleTokenMsging = onRarible(contract)
     const scrollTokenMsging = onScroll(contract)
@@ -221,6 +223,15 @@ export default async (): Promise<OmniGraphHardhat<TokenMessagingNodeConfig, Toke
                 },
             },
             {
+                contract: orderlyTokenMsging,
+                config: {
+                    owner: getSafeAddress(EndpointId.ORDERLY_V2_MAINNET),
+                    delegate: getSafeAddress(EndpointId.ORDERLY_V2_MAINNET),
+                    planner: DEFAULT_PLANNER,
+                    assets: assetConfigs[EndpointId.ORDERLY_V2_MAINNET],
+                },
+            },
+            {
                 contract: polygonTokenMsging,
                 config: {
                     owner: getSafeAddress(EndpointId.POLYGON_V2_MAINNET),
@@ -302,6 +313,7 @@ export default async (): Promise<OmniGraphHardhat<TokenMessagingNodeConfig, Toke
             mantleTokenMsging,
             metisTokenMsging,
             optTokenMsging,
+            orderlyTokenMsging,
             polygonTokenMsging,
             raribleTokenMsging,
             scrollTokenMsging,

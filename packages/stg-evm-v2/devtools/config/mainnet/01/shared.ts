@@ -81,6 +81,7 @@ export const getMessagingAssetConfig = async (getEnvironment = createGetHreByEid
         TokenName.USDC,
         TokenName.USDT,
     ] as const)
+    const orderlyAssetAddresses = await getAssetAddresses(EndpointId.ORDERLY_V2_MAINNET, [TokenName.USDC] as const)
     const polygonAssetAddresses = await getAssetAddresses(EndpointId.POLYGON_V2_MAINNET, [
         TokenName.USDC,
         TokenName.USDT,
@@ -185,6 +186,9 @@ export const getMessagingAssetConfig = async (getEnvironment = createGetHreByEid
             [optAssetAddresses.ETH]: ASSETS[TokenName.ETH].assetId,
             [optAssetAddresses.USDC]: ASSETS[TokenName.USDC].assetId,
             [optAssetAddresses.USDT]: ASSETS[TokenName.USDT].assetId,
+        },
+        [EndpointId.ORDERLY_V2_MAINNET]: {
+            [orderlyAssetAddresses.USDC]: ASSETS[TokenName.USDC].assetId,
         },
         [EndpointId.POLYGON_V2_MAINNET]: {
             [polygonAssetAddresses.USDC]: ASSETS[TokenName.USDC].assetId,
