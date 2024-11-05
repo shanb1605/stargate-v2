@@ -309,9 +309,6 @@ export const ASSETS: Record<TokenName, AssetConfig> = {
                 type: StargateType.Pool,
                 address: '0x94b008aa00579c1307b0ef2c499ad98a8ce58e58',
             },
-            [EndpointId.ORDERLY_V2_MAINNET]: {
-                type: StargateType.Oft,
-            },
             [EndpointId.POLYGON_V2_MAINNET]: {
                 type: StargateType.Pool,
                 address: '0xc2132d05d31c914a87c6611c10748aeb04b58e8f',
@@ -427,6 +424,10 @@ export const ASSETS: Record<TokenName, AssetConfig> = {
             [EndpointId.MANTLE_V2_MAINNET]: {
                 address: '0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9',
                 type: StargateType.Pool,
+            },
+            [EndpointId.ORDERLY_V2_MAINNET]: {
+                address: '0x09006b525D3798aC8c3017bF029C1a3381163C4e',
+                type: StargateType.Oft,
             },
             [EndpointId.OPTIMISM_V2_MAINNET]: {
                 address: '0x0b2c639c533813f4aa9d7837caf62653d097ff85',
