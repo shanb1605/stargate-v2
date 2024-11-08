@@ -1,5 +1,11 @@
 # @stargatefinance/stg-definitions-v2
 
+## 1.2.5
+
+### Patch Changes
+
+- 453dec7: peaq mainnet config
+
 ## 1.2.4
 
 ### Patch Changes

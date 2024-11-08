@@ -1,5 +1,13 @@
 # @stargatefinance/stg-evm-v2
 
+## 1.1.4
+
+### Patch Changes
+
+- 453dec7: peaq mainnet config
+- Updated dependencies [453dec7]
+  - @stargatefinance/stg-definitions-v2@1.2.5
+
 ## 1.1.3
 
 ### Patch Changes
